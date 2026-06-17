@@ -1,6 +1,8 @@
 const express = require("express");
 const cors = require("cors");
 
+const { obtenerServicios } = require("./controllers/serviciosController");
+
 const app = express();
 
 app.use(cors());
@@ -11,5 +13,7 @@ app.get("/", (req, res) => {
         mensaje: "API funcionando correctamente"
     });
 });
+
+app.get("/servicios", obtenerServicios);
 
 module.exports = app;

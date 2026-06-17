@@ -1,0 +1,17 @@
+[
+{
+    "id": 1,
+    "nombre": "Diseño Web",
+    "descripcion": "Creación de sitios web modernos."
+},
+{
+    "id": 2,
+    "nombre": "Desarrollo Frontend",
+    "descripcion": "Interfaces interactivas."
+},
+{
+    "id": 3,
+    "nombre": "Desarrollo Backend",
+    "descripcion": "APIs y lógica del servidor."
+}
+]
