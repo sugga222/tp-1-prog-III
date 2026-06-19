@@ -16,8 +16,18 @@
     "email": "ana@gmail.com",
     "fechaRegistro": "2026-05-10",
     "ultimosPedidos": [
-    "Portfolio",
-    "Blog"
+    "Portfolio Profesional",
+    "Blog Corporativo"
+    ]
+},
+{
+    "id": 3,
+    "nombre": "Carlos Gomez",
+    "email": "carlos@gmail.com",
+    "fechaRegistro": "2026-04-22",
+    "ultimosPedidos": [
+    "Panel Administrativo",
+    "Aplicación Web"
     ]
 }
 ]

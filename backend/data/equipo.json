@@ -1,12 +1,12 @@
 [
 {
     "id": 1,
-    "nombre": "Agustin",
-    "rol": "Frontend"
+    "nombre": "Agustin Gonzalez",
+    "rol": "Frontend Developer"
 },
 {
     "id": 2,
-    "nombre": "Manuel",
-    "rol": "Backend"
+    "nombre": "Manuel Aguilar",
+    "rol": "Backend Developer"
 }
 ]

@@ -2,16 +2,76 @@
 {
     "id": 1,
     "nombre": "Diseño Web",
-    "descripcion": "Creación de sitios web modernos."
+    "descripcion": "Creación de sitios web modernos y responsivos."
 },
 {
     "id": 2,
     "nombre": "Desarrollo Frontend",
-    "descripcion": "Interfaces interactivas."
+    "descripcion": "Interfaces dinámicas utilizando HTML, CSS y JavaScript."
 },
 {
     "id": 3,
     "nombre": "Desarrollo Backend",
-    "descripcion": "APIs y lógica del servidor."
+    "descripcion": "Implementación de APIs y lógica de negocio."
+},
+{
+    "id": 4,
+    "nombre": "Landing Pages",
+    "descripcion": "Páginas orientadas a campañas publicitarias."
+},
+{
+    "id": 5,
+    "nombre": "Tiendas Online",
+    "descripcion": "Desarrollo de plataformas de comercio electrónico."
+},
+{
+    "id": 6,
+    "nombre": "Optimización SEO",
+    "descripcion": "Mejoras para posicionamiento en buscadores."
+},
+{
+    "id": 7,
+    "nombre": "Diseño UX/UI",
+    "descripcion": "Diseño centrado en la experiencia del usuario."
+},
+{
+    "id": 8,
+    "nombre": "Aplicaciones Web",
+    "descripcion": "Desarrollo de aplicaciones web personalizadas."
+},
+{
+    "id": 9,
+    "nombre": "Mantenimiento Web",
+    "descripcion": "Actualización y soporte de sitios existentes."
+},
+{
+    "id": 10,
+    "nombre": "Hosting",
+    "descripcion": "Servicios de alojamiento para proyectos web."
+},
+{
+    "id": 11,
+    "nombre": "Bases de Datos",
+    "descripcion": "Diseño y administración de bases de datos."
+},
+{
+    "id": 12,
+    "nombre": "Consultoría Digital",
+    "descripcion": "Asesoramiento tecnológico para empresas."
+},
+{
+    "id": 13,
+    "nombre": "Automatización",
+    "descripcion": "Automatización de procesos empresariales."
+},
+{
+    "id": 14,
+    "nombre": "Integración de APIs",
+    "descripcion": "Conexión con servicios externos."
+},
+{
+    "id": 15,
+    "nombre": "Paneles Administrativos",
+    "descripcion": "Desarrollo de sistemas de gestión internos."
 }
 ]
