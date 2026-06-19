@@ -4,6 +4,7 @@
     "nombre": "Juan Perez",
     "email": "juan@gmail.com",
     "fechaRegistro": "2026-06-18",
+    "foto": "https://via.placeholder.com/150",
     "ultimosPedidos": [
     "Landing Page",
     "Tienda Online",
@@ -15,6 +16,7 @@
     "nombre": "Ana Lopez",
     "email": "ana@gmail.com",
     "fechaRegistro": "2026-05-10",
+    "foto": "https://via.placeholder.com/150",
     "ultimosPedidos": [
     "Portfolio Profesional",
     "Blog Corporativo"
@@ -25,6 +27,7 @@
     "nombre": "Carlos Gomez",
     "email": "carlos@gmail.com",
     "fechaRegistro": "2026-04-22",
+    "foto": "https://via.placeholder.com/150",
     "ultimosPedidos": [
     "Panel Administrativo",
     "Aplicación Web"
