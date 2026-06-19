@@ -1,60 +1,190 @@
-# TP 3 - Programación III
+# ServiTech
 
-## Integrantes
-
-* Agustín González
-* Manuel Aguilar
+Plataforma web para la gestión y presentación de servicios digitales mediante una arquitectura cliente-servidor basada en tecnologías web modernas y APIs REST.
 
 ---
 
-## Descripción del proyecto
+## Overview
 
-Proyecto desarrollado para la materia Programación III.
+ServiTech es una aplicación web diseñada para centralizar la información de servicios, perfiles de usuario y equipo de trabajo en una interfaz simple, accesible y responsive.
 
-La aplicación está compuesta por un frontend realizado con HTML, CSS y JavaScript, y un backend desarrollado con Node.js y Express que expone una API REST para consultar información de servicios, integrantes del equipo y perfiles de usuarios.
+La plataforma implementa una arquitectura desacoplada entre frontend y backend, permitiendo el consumo de información dinámica mediante solicitudes HTTP y facilitando el mantenimiento y la escalabilidad del sistema.
 
 ---
 
-## Tecnologías utilizadas
+## Key Features
+
+### Service Catalog
+
+Visualización dinámica de servicios obtenidos desde una API REST.
+
+### Team Directory
+
+Presentación de integrantes y roles del equipo de trabajo.
+
+### User Profiles
+
+Consulta y visualización de perfiles de usuario.
+
+### Request Management
+
+Formulario para la solicitud de servicios.
+
+### Contact Center
+
+Formulario de contacto para consultas y mensajes.
+
+### Authentication Interface
+
+Pantalla de inicio de sesión preparada para futuras integraciones de autenticación.
+
+### Responsive Experience
+
+Interfaz adaptable a distintos tamaños de pantalla y dispositivos.
+
+---
+
+## Technology Stack
 
 ### Frontend
 
 * HTML5
 * CSS3
-* JavaScript
+* JavaScript (ES6)
 
 ### Backend
 
 * Node.js
-* Express
+* Express.js
 * CORS
-* Nodemon
+
+### Infrastructure
+
+* Git
+* GitHub
+* GitHub Pages
+* Render
 
 ---
 
-## Estructura del proyecto
+## Architecture
+
+La aplicación sigue una arquitectura cliente-servidor.
+
+### Client Layer
+
+Responsable de la navegación, interacción con el usuario y renderizado dinámico de contenido.
+
+### API Layer
+
+Responsable de exponer endpoints REST para el acceso a la información de la aplicación.
+
+### Data Layer
+
+Información almacenada en formato JSON y consumida mediante solicitudes HTTP.
+
+---
+
+## Frontend Integration
+
+### servicios.js
+
+Consume el endpoint:
+
+```http
+GET /servicios
+```
+
+Obtiene el catálogo de servicios desde la API y genera dinámicamente las tarjetas mostradas en la interfaz.
+
+### equipo.js
+
+Consume el endpoint:
+
+```http
+GET /equipo
+```
+
+Obtiene la información de los integrantes del equipo y renderiza las tarjetas correspondientes.
+
+### perfil.js
+
+Consume el endpoint:
+
+```http
+GET /perfil/:id
+```
+
+Obtiene los datos de un usuario específico y muestra la información en la página de perfil.
+
+---
+
+## Application Flow
+
+1. El usuario accede a una sección de la aplicación.
+2. El frontend ejecuta una solicitud HTTP utilizando Fetch API.
+3. La API recibe la solicitud correspondiente.
+4. El servidor obtiene la información almacenada en formato JSON.
+5. La respuesta se envía al cliente en formato JSON.
+6. El frontend procesa los datos recibidos.
+7. La interfaz se actualiza dinámicamente mediante manipulación del DOM.
+
+---
+
+## API Reference
+
+### Services
+
+```http
+GET /servicios
+GET /servicios/:id
+```
+
+Obtiene el catálogo de servicios o un servicio específico según su identificador.
+
+### Team
+
+```http
+GET /equipo
+```
+
+Obtiene el listado de integrantes del equipo.
+
+### Profiles
+
+```http
+GET /perfil/:id
+```
+
+Obtiene la información de un usuario específico.
+
+---
+
+## Live Environment
+
+### Web Application
+
+https://sugga222.github.io/tp-1-prog-III/
+
+### API Endpoint
+
+https://servitech-api-ohoz.onrender.com
+
+---
+
+## Project Structure
 
 ```text
 /
-├── backend/
-│   ├── controllers/
-│   │   ├── serviciosController.js
-│   │   ├── equipoController.js
-│   │   └── usuariosController.js
-│   │
-│   ├── data/
-│   │   ├── servicios.json
-│   │   ├── equipo.json
-│   │   └── usuarios.json
-│   │
-│   ├── app.js
-│   ├── server.js
-│   ├── package.json
-│   └── package-lock.json
-│
 ├── assets/
+│
 ├── css/
 │   └── styles.css
+│
+├── js/
+│   ├── servicios.js
+│   ├── equipo.js
+│   └── perfil.js
 │
 ├── index.html
 ├── servicios.html
@@ -62,63 +192,19 @@ La aplicación está compuesta por un frontend realizado con HTML, CSS y JavaScr
 ├── pedido.html
 ├── contacto.html
 ├── faq.html
+├── login.html
+├── perfil.html
+│
+├── db.json
+├── server.js
+├── package.json
+├── package-lock.json
 └── README.md
 ```
 
 ---
 
-## Funcionalidades
-
-### Frontend
-
-* Navegación entre páginas.
-* Visualización de servicios.
-* Información del equipo.
-* Formulario de pedidos.
-* Formulario de contacto.
-* Preguntas frecuentes.
-
-### Backend
-
-La API permite consultar información almacenada en archivos JSON.
-
-Endpoints disponibles:
-
-#### Obtener todos los servicios
-
-```http
-GET /servicios
-```
-
-#### Obtener un servicio por ID
-
-```http
-GET /servicios/:id
-```
-
-#### Obtener integrantes del equipo
-
-```http
-GET /equipo
-```
-
-#### Obtener perfil de usuario por ID
-
-```http
-GET /perfil/:id
-```
-
----
-
-## Instalación y ejecución
-
-### Backend
-
-Ingresar a la carpeta backend:
-
-```bash
-cd backend
-```
+## Local Development
 
 Instalar dependencias:
 
@@ -126,19 +212,19 @@ Instalar dependencias:
 npm install
 ```
 
-Iniciar el servidor:
-
-```bash
-npm run dev
-```
-
-o
+Ejecutar servidor:
 
 ```bash
 npm start
 ```
 
-Servidor disponible en:
+Modo desarrollo:
+
+```bash
+npm run dev
+```
+
+Servidor local:
 
 ```text
 http://localhost:3000
@@ -146,22 +232,39 @@ http://localhost:3000
 
 ---
 
-## Distribución de tareas
+## Development Team
 
 ### Agustín González
 
-* Desarrollo Frontend
-* Diseño e interfaz de usuario
-* Integración con la API
+* Frontend Development
+* UI Implementation
+* API Integration
+* Infrastructure Configuration
+* GitHub Pages Deployment
+* Render Deployment
 
 ### Manuel Aguilar
 
-* Desarrollo Backend
-* Implementación de endpoints
-* Gestión de archivos JSON
+* Backend Development
+* REST API Design
+* Endpoint Implementation
+* Data Management
 
 ---
 
-## Estado del proyecto
+## Repository
 
-Proyecto funcional desarrollado para la entrega del Trabajo Práctico N°3 de Programación III.
+https://github.com/sugga222/tp-1-prog-III
+
+---
+
+## Project Status
+
+Production Ready
+
+* Frontend deployed on GitHub Pages.
+* Backend deployed on Render.
+* REST API integration completed.
+* Dynamic content rendering implemented through Fetch API.
+* Responsive user interface available across devices.
+* Version control managed through Git and GitHub.
