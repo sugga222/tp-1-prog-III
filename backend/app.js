@@ -9,6 +9,10 @@ const {
 const { obtenerEquipo } =
 require("./controllers/equipoController");
 
+const {
+    obtenerPerfilPorId
+} = require("./controllers/usuariosController");
+
 const app = express();
 
 app.use(cors());
@@ -23,5 +27,6 @@ app.get("/", (req, res) => {
 app.get("/servicios", obtenerServicios);
 app.get("/servicios/:id", obtenerServicioPorId);
 app.get("/equipo", obtenerEquipo);
+app.get("/perfil/:id", obtenerPerfilPorId);
 
 module.exports = app;

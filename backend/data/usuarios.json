@@ -1,0 +1,23 @@
+[
+{
+    "id": 1,
+    "nombre": "Juan Perez",
+    "email": "juan@gmail.com",
+    "fechaRegistro": "2026-06-18",
+    "ultimosPedidos": [
+    "Landing Page",
+    "Tienda Online",
+    "Sistema de Turnos"
+    ]
+},
+{
+    "id": 2,
+    "nombre": "Ana Lopez",
+    "email": "ana@gmail.com",
+    "fechaRegistro": "2026-05-10",
+    "ultimosPedidos": [
+    "Portfolio",
+    "Blog"
+    ]
+}
+]
