@@ -3,7 +3,7 @@ const contenedor = document.getElementById("contenedor-servicios");
 async function cargarServicios() {
     try {
         const respuesta = await fetch(
-            "http://localhost:3000/servicios"
+            "https://servitech-api-ohoz.onrender.com/servicios"
         );
 
         const servicios = await respuesta.json();

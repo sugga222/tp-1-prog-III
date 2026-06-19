@@ -3,7 +3,7 @@ const contenedor = document.getElementById("contenedor-equipo");
 async function cargarEquipo() {
     try {
         const respuesta = await fetch(
-            "http://localhost:3000/equipo"
+            "https://servitech-api-ohoz.onrender.com/equipo"
         );
 
         const integrantes = await respuesta.json();

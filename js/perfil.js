@@ -6,7 +6,7 @@ async function cargarPerfil() {
     try {
 
         const respuesta = await fetch(
-            "http://localhost:3000/perfil/1"
+            "https://servitech-api-ohoz.onrender.com/perfil/1"
         );
 
         const perfil = await respuesta.json();
