@@ -1,7 +1,10 @@
 const express = require("express");
 const cors = require("cors");
 
-const { obtenerServicios } = require("./controllers/serviciosController");
+const {
+    obtenerServicios,
+    obtenerServicioPorId
+} = require("./controllers/serviciosController");
 
 const app = express();
 
@@ -15,5 +18,6 @@ app.get("/", (req, res) => {
 });
 
 app.get("/servicios", obtenerServicios);
+app.get("/servicios/:id", obtenerServicioPorId);
 
 module.exports = app;
